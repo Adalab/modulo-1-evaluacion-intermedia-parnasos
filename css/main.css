@@ -29,6 +29,7 @@
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 13px;
+  color: #4a4a4a;
 }
 .enlace {
   display: inline;
@@ -52,4 +53,28 @@
   color: #ffffff;
   font-weight: bold;
   padding-bottom: 120px;
+}
+
+@media all and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
+  .logo {
+    width: 150px;
+    display: flex;
+    justify-content: left;
+    box-sizing: border-box;
+    margin: 20px auto 20px 30px;
+  }
+  .image {
+    justify-content: left;
+  }
+  .texto {
+    font-size: 40px;
+  }
 }
