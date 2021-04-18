@@ -5,9 +5,13 @@
   font-family: "Rubik", sans-serif;
 }
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   position: fixed;
   z-index: 1;
+  background-color: #ffffff;
+  top: 0;
 }
 .logo {
   width: 150px;
@@ -35,7 +39,7 @@
   display: inline;
   font-size: 16px;
   text-transform: uppercase;
-  margin: 10px;
+  padding: 10px;
   color: #4a4a4a;
 }
 .link {
@@ -53,11 +57,11 @@
   color: #ffffff;
   font-weight: bold;
   padding-bottom: 120px;
+  text-transform: capitalize;
 }
 
 @media all and (min-width: 768px) {
   .menu {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: left;
     align-items: center;
@@ -65,10 +69,7 @@
     margin-bottom: 40px;
   }
   .logo {
-    width: 150px;
-    display: flex;
     justify-content: left;
-    box-sizing: border-box;
     margin: 20px auto 20px 30px;
   }
   .image {
